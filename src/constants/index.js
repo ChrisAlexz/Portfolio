@@ -1,223 +1,74 @@
 export const myProjects = [
   {
     id: 1,
-    title: "E-commerce Platform",
+    title: "Jacal.io - Student Learning Platform",
     description:
-      "Facilitates purchases from international websites like Amazon and eBay, allowing customers to shop from these sites and have products delivered domestically.",
+      "Production full-stack spaced repetition learning platform serving students with adaptive learning algorithms.",
     subDescription: [
-      "Built a scalable application with ASP.NET Core MVC, integrating global platforms like Amazon for domestic delivery.",
-      "Implemented secure authentication and database management using ASP.NET Core Identity and Entity Framework Core.",
-      "Designed a responsive frontend with Tailwind CSS, enhancing user experience.",
-      "Added payment systems, localization, and product filtering for functionality improvements.",
+      "Built production full-stack application using React, Node.js, and PostgreSQL with OAuth 2.0 authentication, deployed on Vercel's serverless infrastructure serving users at jacal.io",
+      "Engineered adaptive spaced repetition algorithm implementing Anki's SM-2 methodology with 4-difficulty rating system and dynamic interval scheduling based on user performance",
+      "Designed normalized PostgreSQL database schema with 8 tables managing user authentication, flashcard hierarchies, study sessions, and daily analytics with row-level security policies and optimized indexing",
+      "Implemented persistent study session state across page refreshes, GitHub-style contribution heatmap tracking daily review activity, and support for multiple card types including Cloze deletion and image occlusion for medical students",
     ],
-    href: "",
+    href: "https://jacal.io",
     logo: "",
-    image: "/assets/projects/accessories.jpg",
+    image: "/assets/projects/jacal.jpg",
     tags: [
       {
         id: 1,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
+        name: "React",
+        path: "/assets/logos/react.svg",
       },
       {
         id: 2,
-        name: ".Net",
-        path: "/assets/logos/dotnet.svg",
+        name: "Node.js",
+        path: "/assets/logos/nodejs.svg",
       },
       {
         id: 3,
-        name: "Ef Core",
-        path: "/assets/logos/efcore.png",
+        name: "PostgreSQL",
+        path: "/assets/logos/postgresql.svg",
       },
       {
         id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
+        name: "Vercel",
+        path: "/assets/logos/vercel.svg",
       },
     ],
   },
   {
     id: 2,
-    title: "Authentication & Authorization System",
+    title: "SmartFridge - AI-Powered Recipe Generator",
     description:
-      "A secure authentication and authorization system using Auth0 for seamless user management.",
+      "Full-stack web application that generates personalized recipes from fridge photos using Google's Gemini AI.",
     subDescription: [
-      "Integrated Auth0 for authentication, supporting OAuth, JWT, and multi-factor authentication.",
-      "Implemented role-based access control (RBAC) for fine-grained user permissions.",
-      "Developed a React-based frontend with Tailwind CSS for a sleek user experience.",
-      "Connected to a secure SQLite database for user data storage.",
+      "Developed full-stack web application using FastAPI backend and vanilla JavaScript frontend that generates personalized recipes from fridge photos using Google's Gemini 2.5 Flash vision AI model",
+      "Implemented multi-modal ingredient detection system supporting image uploads (JPEG, PNG) and PDF documents, with manual ingredient input feature for enhanced accuracy",
+      "Deployed production application on Render with Python 3.11, managing environment configuration, dependency optimization, and automated CI/CD pipeline from GitHub repository",
     ],
-    href: "",
+    href: "https://smart-fridge-xs9v.onrender.com/",
     logo: "",
-    image: "/assets/projects/auth-system.jpg",
+    image: "/assets/projects/smartfridge.jpg",
     tags: [
       {
         id: 1,
-        name: "Auth0",
-        path: "/assets/logos/auth0.svg",
+        name: "Python",
+        path: "/assets/logos/python.svg",
       },
       {
         id: 2,
-        name: "React",
-        path: "/assets/logos/react.svg",
+        name: "FastAPI",
+        path: "/assets/logos/fastapi.svg",
       },
       {
         id: 3,
-        name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
+        name: "JavaScript",
+        path: "/assets/logos/javascript.svg",
       },
       {
         id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
-      },
-    ],
-  },
-  {
-    id: 3,
-    title: "Blazor Web App",
-    description:
-      "A modern, interactive web application built with Blazor WebAssembly and .NET Core.",
-    subDescription: [
-      "Developed a fully interactive Single Page Application (SPA) using Blazor WebAssembly.",
-      "Implemented API interactions using .NET Core for a robust backend.",
-      "Designed responsive UI components with Tailwind CSS for an enhanced UX.",
-      "Integrated SQLite for efficient client-side database storage.",
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/blazor-app.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "Blazor",
-        path: "/assets/logos/blazor.svg",
-      },
-      {
-        id: 2,
-        name: ".NET Core",
-        path: "/assets/logos/dotnetcore.svg",
-      },
-      {
-        id: 3,
-        name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
-      },
-    ],
-  },
-  {
-    id: 4,
-    title: "C++ Game Engine",
-    description:
-      "A lightweight C++ game engine designed for 2D and 3D game development.",
-    subDescription: [
-      "Built a powerful rendering engine using OpenGL and C++.",
-      "Developed a physics engine with collision detection and particle effects.",
-      "Implemented a scripting system for easy game customization.",
-      "Optimized performance with multi-threading and efficient memory management.",
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/game-engine.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "C++",
-        path: "/assets/logos/cplusplus.svg",
-      },
-      {
-        id: 2,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
-      },
-      {
-        id: 3,
-        name: "Git",
-        path: "/assets/logos/git.svg",
-      },
-      {
-        id: 4,
-        name: "Microsoft",
-        path: "/assets/logos/microsoft.svg",
-      },
-    ],
-  },
-  {
-    id: 5,
-    title: "WordPress Custom Theme",
-    description:
-      "A fully customizable WordPress theme optimized for performance and SEO.",
-    subDescription: [
-      "Developed a responsive WordPress theme using HTML5, CSS3, and JavaScript.",
-      "Integrated Tailwind CSS for modern styling and UI enhancements.",
-      "Optimized SEO and page speed using Vite.js for fast builds.",
-      "Implemented custom widgets and plugin compatibility for extended functionality.",
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/wordpress-theme.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "WordPress",
-        path: "/assets/logos/wordpress.svg",
-      },
-      {
-        id: 2,
-        name: "HTML5",
-        path: "/assets/logos/html5.svg",
-      },
-      {
-        id: 3,
-        name: "CSS3",
-        path: "/assets/logos/css3.svg",
-      },
-      {
-        id: 4,
-        name: "Vite.js",
-        path: "/assets/logos/vitejs.svg",
-      },
-    ],
-  },
-  {
-    id: 6,
-    title: "Online Learning Platform",
-    description:
-      "A web application that allows users to enroll in courses, watch video lectures, and take quizzes.",
-    subDescription: [
-      "Built using Blazor WebAssembly for a seamless SPA experience.",
-      "Implemented video streaming with Azure Media Services.",
-      "Added a quiz system with dynamic question generation and real-time grading.",
-      "Integrated Stripe API for secure payment processing.",
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/elearning.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "Blazor",
-        path: "/assets/logos/blazor.svg",
-      },
-      {
-        id: 2,
-        name: "Azure",
-        path: "/assets/logos/azure.svg",
-      },
-      {
-        id: 3,
-        name: "Stripe",
-        path: "/assets/logos/stripe.svg",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
+        name: "Gemini AI",
+        path: "/assets/logos/gemini.svg",
       },
     ],
   },
@@ -225,57 +76,45 @@ export const myProjects = [
 
 export const mySocials = [
   {
-    name: "WhatsApp",
-    href: "",
-    icon: "/assets/socials/whatsApp.svg",
+    name: "GitHub",
+    href: "https://github.com/ChrisAlexz",
+    icon: "/assets/socials/github.svg",
   },
   {
     name: "Linkedin",
-    href: "https://www.linkedin.com/in/ali-sanati/",
+    href: "https://www.linkedin.com/in/chris-hernandez-/",
     icon: "/assets/socials/linkedIn.svg",
   },
   {
-    name: "Instagram",
-    href: "https://www.instagram.com/ali.sanatidev/reels/",
-    icon: "/assets/socials/instagram.svg",
+    name: "Email",
+    href: "mailto:chrishern869@gmail.com",
+    icon: "/assets/socials/email.svg",
   },
 ];
 
 export const experiences = [
   {
-    title: "Software Developer",
-    job: "Security & Defense Projects",
-    date: "2021-2023",
+    title: "Programming Intern",
+    job: "Projection Inc.",
+    date: "June 2025 - Aug 2025",
     contents: [
-      "Enhanced application security and developed new features, adhering to standards set by the Passive Defense Organization and National Cyberspace Center.",
-      "Designed and implemented intuitive map interfaces using MapsUI, enhancing user experience and enabling seamless interactive map integration.",
-      "Developed applications for industrial automation, leveraging C++ and the Fatek API for PLC communication.",
-      "Enhanced responsiveness and usability of applications using Windows Forms and WPF frameworks.",
-      "Executed XML to SVG conversions using X-DOM, ensuring dynamic and efficient data visualization.",
+      "Utilized MySQL for data analysis and optimization, writing complex queries to extract insights and generate reports from conference databases",
+      "Maintained and updated participant portal using Visual Basic, managing user uploads and event information for conference attendees",
+      "Customized client websites based on specific requirements and preferences, ensuring tailored solutions for diverse business needs",
     ],
   },
   {
-    title: "Back-End Developer",
-    job: "Car Manufacture",
-    date: "2023-2024",
+    title: "Administrative Operations Specialist",
+    job: "Global Janitorial & Multi Services",
+    date: "June 2020 - Jan 2025",
     contents: [
-      "Engineered systems for large-scale data ingestion and analysis, ensuring efficient data processing and storage.",
-      "Developed back-end systems enabling vehicle-to-cloud communication for telemetry, diagnostics, and remote control:",
-      "✅ Implemented secure APIs, following ISO 26262 automotive safety standards.",
-      "✅ Ensured data privacy for customers and partners through industry-compliant protocols.",
-      "✅ Delivered remote features like over-the-air updates, real-time tracking, and remote start capabilities.",
-    ],
-  },
-  {
-    title: "Freelance Developer",
-    job: "Self-Employed",
-    date: "2025-Present",
-    contents: [
-      "Created a personal portfolio using Three.js, React, Vite, and WebAPI to showcase technical expertise.",
-      "Continuously enhancing technical skills and expanding expertise in modern web development and back-end technologies.",
+      "Oversee comprehensive accounting operations, ensuring accurate financial record-keeping and compliance with company policies and regulatory requirements",
+      "Manage bank processing activities including transaction monitoring, reconciliation, and payment processing to maintain optimal cash flow",
+      "Monitor and analyze cash flow patterns and financial data to support strategic decision-making and identify areas for operational improvement",
     ],
   },
 ];
+
 export const reviews = [
   {
     name: "Jack",
