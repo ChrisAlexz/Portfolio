@@ -12,7 +12,7 @@ export const myProjects = [
     ],
     href: "https://jacal.io",
     logo: "",
-    image: "/assets/projects/jacal.jpg",
+    image: "/assets/projects/jacal.png",
     tags: [
       {
         id: 1,
@@ -38,6 +38,43 @@ export const myProjects = [
   },
   {
     id: 2,
+    title: "DevTools - AI-Powered Bug Tracking Automation",
+    description:
+      "Intelligent Slack bot that automatically triages bug reports, creates Jira tickets, and generates GitHub pull requests with AI-suggested fixes.",
+    subDescription: [
+      "Built automated workflow system integrating Slack, Jira, and GitHub APIs to streamline bug tracking from report to pull request, reducing manual triage time by automating ticket creation and code fix suggestions",
+      "Implemented AI-powered bug analysis using Google Gemini 2.0 Flash to parse Slack conversations, extract reproduction steps, assess severity levels, and generate targeted code patches with test plans",
+      "Engineered GitHub integration using PyGithub to automatically create feature branches, commit AI-generated fixes, and open pull requests with comprehensive descriptions linking back to Jira tickets",
+      "Designed structured configuration system with Pydantic for managing multi-service credentials, repository context, and workflow settings across Slack Socket Mode, Jira REST API, and GitHub App authentication",
+    ],
+    href: "https://github.com/ChrisAlexz/DevTools",
+    logo: "",
+    image: "/assets/projects/devtools.jpg",
+    tags: [
+      {
+        id: 1,
+        name: "Python",
+        path: "/assets/logos/python.svg",
+      },
+      {
+        id: 2,
+        name: "Slack",
+        path: "/assets/logos/slack.svg",
+      },
+      {
+        id: 3,
+        name: "Jira",
+        path: "/assets/logos/jira.svg",
+      },
+      {
+        id: 4,
+        name: "GitHub",
+        path: "/assets/logos/github.svg",
+      },
+    ],
+  },
+  {
+    id: 3,
     title: "SmartFridge - AI-Powered Recipe Generator",
     description:
       "Full-stack web application that generates personalized recipes from fridge photos using Google's Gemini AI.",
@@ -48,7 +85,7 @@ export const myProjects = [
     ],
     href: "https://smart-fridge-xs9v.onrender.com/",
     logo: "",
-    image: "/assets/projects/smartfridge.jpg",
+    image: "/assets/projects/SmartFridge.png",
     tags: [
       {
         id: 1,
