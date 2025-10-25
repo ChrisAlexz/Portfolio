@@ -140,16 +140,6 @@ export const experiences = [
       "Customized client websites based on specific requirements and preferences, ensuring tailored solutions for diverse business needs",
     ],
   },
-  {
-    title: "Administrative Operations Specialist",
-    job: "Global Janitorial & Multi Services",
-    date: "June 2020 - Jan 2025",
-    contents: [
-      "Oversee comprehensive accounting operations, ensuring accurate financial record-keeping and compliance with company policies and regulatory requirements",
-      "Manage bank processing activities including transaction monitoring, reconciliation, and payment processing to maintain optimal cash flow",
-      "Monitor and analyze cash flow patterns and financial data to support strategic decision-making and identify areas for operational improvement",
-    ],
-  },
 ];
 
 export const reviews = [
