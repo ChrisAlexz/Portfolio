@@ -33,11 +33,11 @@ const Courses = () => {
   };
 
   return (
-    <div className="relative flex flex-col w-full h-full p-6">
-      <h3 className="mb-4 text-2xl font-semibold text-white">Relevant Courses</h3>
+    <div className="relative flex flex-col w-full h-full p-4 md:p-6">
+      <h3 className="mb-3 text-xl font-semibold text-white md:text-2xl md:mb-4">Relevant Courses</h3>
       
-      {/* Grid of courses - 4 columns on desktop, 2 on mobile */}
-      <div className="grid flex-1 grid-cols-2 gap-3 md:grid-cols-4">
+      {/* Grid of courses - 2 columns on mobile, 4 on desktop */}
+      <div className="grid flex-1 grid-cols-2 gap-2 md:gap-3 md:grid-cols-4">
         {courses.map((course, index) => (
           <motion.div
             key={index}
@@ -46,13 +46,13 @@ const Courses = () => {
             transition={{ delay: index * 0.08, duration: 0.3 }}
             className={`relative overflow-hidden rounded-lg border bg-gradient-to-br ${getCategoryColor(
               course.category
-            )} p-3 transition-all duration-300 hover:scale-105 hover:shadow-lg`}
+            )} p-2 md:p-3 transition-all duration-300 hover:scale-105 hover:shadow-lg`}
           >
-            <div className="flex flex-col gap-2">
-              <span className={`text-[10px] font-semibold uppercase tracking-wide ${getCategoryBadgeColor(course.category)} px-2 py-1 rounded-full w-fit`}>
+            <div className="flex flex-col gap-1 md:gap-2">
+              <span className={`text-[9px] md:text-[10px] font-semibold uppercase tracking-wide ${getCategoryBadgeColor(course.category)} px-1.5 md:px-2 py-0.5 md:py-1 rounded-full w-fit`}>
                 {course.category}
               </span>
-              <span className="text-sm font-medium leading-tight text-white">
+              <span className="text-xs font-medium leading-tight text-white md:text-sm">
                 {course.name}
               </span>
             </div>

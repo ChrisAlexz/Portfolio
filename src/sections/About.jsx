@@ -5,14 +5,23 @@ import Courses from "../components/Courses";
 
 const About = () => {
   const techStack = [
-    "React & Next.js",
-    "Node.js & Express",
-    "Python & FastAPI",
-    "PostgreSQL & SQLite",
-    "Tailwind CSS",
-    "Git & GitHub",
-    "JavaScript & TypeScript",
-    "C# & .NET",
+    "Python",
+    "JavaScript",
+    "Java",
+    "C++",
+    "C#",
+    "SQL",
+    "HTML/CSS",
+    "Visual Basic",
+    "React",
+    "Node.js",
+    "Express.js",
+    "PostgreSQL",
+    "MySQL",
+    "Git",
+    "RESTful APIs",
+    "Vercel",
+    "Docker",
   ];
 
   return (
@@ -62,33 +71,33 @@ const About = () => {
         </div>
 
         {/* Row 3 */}
-        {/* Grid 4 - Courses - Spans full width */}
-        <div className="relative overflow-hidden md:col-span-12 h-[25rem] md:h-[20rem] grid-default-color hover:-translate-y-1 duration-200">
+        {/* Grid 4 - Courses - Spans full width with fixed height */}
+        <div className="relative overflow-hidden md:col-span-12 h-[28rem] md:h-[20rem] grid-default-color hover:-translate-y-1 duration-200">
           <Courses />
         </div>
 
         {/* Row 4 */}
-        {/* Grid 5 - Tech Stack - Full width with text list and orbiting icons */}
-        <div className="relative overflow-hidden md:col-span-12 h-[22rem] md:h-[20rem] grid-default-color hover:-translate-y-1 duration-200">
-          <div className="flex items-center justify-between h-full p-6">
+        {/* Grid 5 - Tech Stack - Full width with auto height for mobile */}
+        <div className="relative overflow-hidden md:col-span-12 h-auto md:h-[22rem] grid-default-color hover:-translate-y-1 duration-200">
+          <div className="flex flex-col items-center justify-between h-full p-4 md:p-6 md:flex-row">
             {/* Left side - Text content and list */}
-            <div className="z-10 flex-1 max-w-md">
-              <p className="mb-3 text-2xl font-semibold text-white">Tech Stack</p>
-              <p className="mb-4 text-sm text-neutral-400">
+            <div className="z-10 w-full mb-6 md:flex-1 md:max-w-md md:mb-0">
+              <p className="mb-2 text-xl font-semibold text-center text-white md:mb-3 md:text-2xl md:text-left">Tech Stack</p>
+              <p className="mb-3 text-sm text-center md:mb-4 text-neutral-400 md:text-left">
                 I specialize in a variety of languages, frameworks, and tools
               </p>
-              <div className="grid grid-cols-2 gap-2">
+              <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-2">
                 {techStack.map((tech, index) => (
                   <div key={index} className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-lavender" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-lavender flex-shrink-0" />
                     <span className="text-sm text-neutral-300">{tech}</span>
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* Right side - Orbiting icons (contained) */}
-            <div className="relative flex items-center justify-center w-[300px] h-[300px] flex-shrink-0">
+            {/* Right side - Orbiting icons (hidden on mobile, visible on md+) */}
+            <div className="relative items-center justify-center hidden md:flex w-[300px] h-[300px] flex-shrink-0">
               <div className="scale-75">
                 <Frameworks />
               </div>
