@@ -49,7 +49,7 @@ export const myProjects = [
     ],
     href: "https://github.com/ChrisAlexz/DevTools",
     logo: "",
-    image: "./public/assets/projects/DevTools.png",
+    image: "/assets/projects/DevTools.png",
     tags: [
       {
         id: 1,
@@ -133,7 +133,7 @@ export const experiences = [
   {
     title: "Programming Intern",
     job: "Projection Inc.",
-    date: "June 2025 - Aug 2025",
+    date: "June 2024 - Aug 2024",
     contents: [
       "Utilized MySQL for data analysis and optimization, writing complex queries to extract insights and generate reports from conference databases",
       "Maintained and updated participant portal using Visual Basic, managing user uploads and event information for conference attendees",
