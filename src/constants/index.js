@@ -49,7 +49,7 @@ export const myProjects = [
     ],
     href: "https://github.com/ChrisAlexz/DevTools",
     logo: "",
-    image: "/assets/projects/devtools.jpg",
+    image: "./public/assets/projects/DevTools.png",
     tags: [
       {
         id: 1,
